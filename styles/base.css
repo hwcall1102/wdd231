@@ -67,7 +67,6 @@ nav {
 	top: 2rem;
 	right: 1rem;
     background-color: var(--primary-color);
-    flex: 1 1 1 1 1;
 }
 
 #menu::before {
@@ -161,9 +160,10 @@ footer {
     margin-right: auto;
     margin-bottom: 10px;
 }
-.hometown figcaption {
+.hometown p {
     text-align: center;
-    margin-bottom: 5px;    
+    margin-bottom: 5px;
+    color: var(--paragraph-color-on-white)    
 }
 .certificate {
     border: 1px solid var(--secondary-color);
