@@ -143,8 +143,8 @@ function createCreditsCard(filteredCourses) {
     const totalCredits = courses.reduce((total, earned) => {
         return total + (earned.credits);
     }, 0);
+    
     creditsCard.innerHTML =`${completedCredits}/${totalCredits} Credits Completed`;
-   
 
     document.querySelector("#credits").appendChild(creditsCard);
 };
