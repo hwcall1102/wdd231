@@ -262,6 +262,9 @@ footer {
     margin-bottom: 10px;
 }
 
+.credits {
+    text-align: center;
+}
 
 
 @media screen and (min-width: 880px) {
@@ -315,8 +318,7 @@ footer {
     #courses {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-    }
-   
+    }   
 }
 
 @media screen and (min-width: 1300px) {

@@ -129,3 +129,22 @@ function createCourseCard(filteredCourses) {
         document.querySelector("#courses").appendChild(card);
     });
 };
+
+createCreditsCard(courses);
+
+function createCreditsCard(filteredCourses) {
+    document.querySelector("#credits").innerHTML;
+    let creditsCard = document.createElement("p");
+    creditsCard.setAttribute("Class", "credits");
+
+    const completedCredits = courses.reduce((total,earned) => {
+        return total + (earned.credits);
+    }, -2);
+    const totalCredits = courses.reduce((total, earned) => {
+        return total + (earned.credits);
+    }, 0);
+    creditsCard.innerHTML =`${completedCredits}/${totalCredits} Credits Completed`;
+   
+
+    document.querySelector("#credits").appendChild(creditsCard);
+};
