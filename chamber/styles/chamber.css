@@ -115,6 +115,30 @@ header {
     color: transparent;
 }
 
+#toggle {
+      display: block;
+      font-size: 2rem;
+      font-weight:700;
+      text-decoration: none;
+      padding: .5rem .75rem;
+      color: var(--secondary-color);
+    position: absolute;
+      top: 3rem;
+      right: 1rem;
+    background-color: var(--primary-color);
+    flex: 1 1 1 1 1;
+}
+
+#toggle::before {
+      content: "View as Grid";
+    color: var(--secondary-color);
+}
+
+#toggle.show::before {
+content: "View as Column";
+color: var(--secondary-color);
+}
+
 #cards {
     margin: 20px;
     display: grid;
