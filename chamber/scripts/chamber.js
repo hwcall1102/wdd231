@@ -16,16 +16,6 @@ hambutton.addEventListener('click', () => {
 	hambutton.classList.toggle('show');
 });
 
-//view switch
-const toggleSwitch = document.querySelector('#toggle)
-
-toggleSwitch.addEventListener('click', () => {
-toggleSwitch.classList.toggle('show');
-
-const grid = document.getElementById("cards");
-grid.setAttribute("class", "cards-grid");
-});
-
 const cards = document.querySelector('#cards');
 
 async function getMemberData() {
