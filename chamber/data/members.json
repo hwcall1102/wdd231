@@ -2,59 +2,59 @@
     "members": [
         {
             "name": "Kaysville Theatre",
-            "address": "21 North Main Street Kaysville, UT 84037",
+            "address": "21 North Main St. Kaysville, UT 84037",
             "phone": "(801)-999-9999",
             "url": "https://www.thekaysvilletheatre.com/",
-            "image": "",
-            "level": 3
+            "image": "./images/theatre.jpg",
+            "level": "Gold"
         },
         {
             "name": "Kaysville Creamery",
-            "address": "1 North Main Street Kaysville, UT 84037",
+            "address": "1 North Main St. Kaysville, UT 84037",
             "phone": "(801)-999-9959",
             "url": "https://www.facebook.com/thekaysvillecreamery/",
-            "image": "",
-            "level": 1
+            "image": "./images/creamery.jpeg",
+            "level": "Member"
         },
         {
             "name": "Rays Shoe Repair",
-            "address": "15 North Main Street Kaysville, UT 84037",
+            "address": "15 North Main St. Kaysville, UT 84037",
             "phone": "(801)-999-5555",
             "url": "n/a",
-            "image": "",
-            "level": 3
+            "image": "./images/rays.jpeg",
+            "level": "Gold"
         },
         {
             "name": "Kindex",
             "address": "67 N Main St. Kaysville, UT 84037",
             "phone": "(801)-999-9779",
             "url": "https://app.kindex.org/",
-            "image": "",
-            "level": 2
+            "image": "./images/kindex.png",
+            "level": "Silver"
         },
         {
             "name": "Clytie Adams School of Ballet",
-            "address": "50 North Main Street Kaysville, UT 84037",
+            "address": "50 North Main St. Kaysville, UT 84037",
             "phone": "(801)-999-9899",
             "url": "https://clytieadams.com/",
-            "image": "",
-            "level": 1
+            "image": "./images/clytie-adams.jpeg",
+            "level": "Member"
         },
         {
             "name": "Orlando's Mexican Restaurant",
-            "Address": "141 North Main Street Kaysville, UT 84037",
-            "Phone Numbers": "(801)-238-9999",
+            "address": "141 North Main St. Kaysville, UT 84037",
+            "phone": "(801)-238-9999",
             "url": "https://www.orlandosonmain.com/",
-            "image": "",
-            "level": 2
+            "image": "./images/orlandos.jpeg",
+            "level": "Silver"
         },
         {
             "name": "B C Chicken",
-            "address": "20 South Main Street Kaysville, UT 84037",
+            "address": "20 South Main St. Kaysville, UT 84037",
             "phone": "(801)-999-9999",
             "url": "https://sites.google.com/view/bc-chickenutah/home",
-            "image": "",
-            "level": 1
+            "image": "./images/bc-chicken.jpeg",
+            "level": "Member"
         }
     ]
 }

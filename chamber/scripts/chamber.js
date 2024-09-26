@@ -19,7 +19,7 @@ hambutton.addEventListener('click', () => {
 const cards = document.querySelector('#cards');
 
 async function getMemberData() {
-    const response = await fetch(".data/members.json");
+    const response = await fetch("data/members.json");
     const data = await response.json();
     // console.table(data.members);
     displayMembers(data.members);
@@ -32,15 +32,18 @@ const displayMembers = (members) => {
         const name = document.createElement("h2");
         const address = document.createElement("p");
         const phone = document.createElement("p");
-        const website = document.createElement("p");
-        const level = document.createElement("p")
         const image = document.createElement("img")
+        const website = document.createElement("a");
+        const level = document.createElement("p")
+        
 
         name.innerHTML = `${member.name}`;
         address.innerHTML = `${member.address}`;
         phone.innerHTML = `${member.phone}`;
-        website.innerHTML = `${member.url}`;
-        level.innerHTML = `${member.level}`;
+        website.innerHTML = `Website`;
+        level.innerHTML = `Level: ${member.level}`;
+
+        website.setAttribute("href", member.url);
 
         image.setAttribute("src", member.image);
         image.setAttribute("alt", `${member.name}`);
@@ -51,9 +54,10 @@ const displayMembers = (members) => {
         card.appendChild(name);
         card.appendChild(address);
         card.appendChild(phone);
+        card.appendChild(image);
         card.appendChild(website);
         card.appendChild(level);
-        card.appendChild(image);
+        
 
         cards.appendChild(card);
     });
