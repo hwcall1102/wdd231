@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber of Commerce - Directory</title>
+    <meta name="author" content="Hayden Call" >
+    <meta name="description" content="Kaysville City Chamber of Commerce directory." >
+    <meta property="og:title" content="Kaysville City Chamber of Commerce - Directory"/>
+    <meta property="og:type" content="A directory of registered businesses with the Kaysville City Chamber of Commerce."/>
+    <meta property="og:image" content="">
+    <meta property="og:url" content="https://hwcall1102.github.io/wdd231/chamber/directory.html"/>
+    <link rel="icon" href="images/kcc-fav.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/chamber.css">
+    <script src="scripts/chamber.js" defer></script>
+        
+</head>
+<body>
+    <div id="content">
+        <header>
+            <a id="logo_link" href=".html">
+                <img class="logo" src="images/kcc-fav.ico" alt="Kaysville Chamber of Commerce" loading="lazy">
+            </a>
+            <h1 id="hero.msg">Kaysville City</h1>
+            <h5 class="sub-title">Chamber of Commerce</h5>
+            <button id="menu" hidden>,</button>
+            <nav>
+                <ul class="navigation">
+                    <li><a href="home.html">Home</a></li>
+                    <li class="active"><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="hero">
+                <div id="hero-box">
+                    <img id="hero-img" src="" alt="small business" loading="lazy">
+                </div>     
+        </div>
+        <main>
+              <div id="cards"></div>
+        </main>
+        <footer>
+            <section class="footer-left">
+                <h5>Kaysville City Chamber of Commerce</h5>
+                <p>21 North Main Street<br>Kaysville, Utah 84037<br>info@kaysvillecc.org<br>(123)456-7890</p>
+            </section>
+            <section class="footer-center">
+                <p>social link 1</p>
+                <p>social link 2</p>
+                <p>social link 3</p>
+            </section>
+            <section class="footer-right">
+                <p>WDD231 Class Project<br>Hayden Call<br>&copy; <span id="currentyear"></span> Kaysville City Chamber of Commerce</p>
+                <p class="modified"><span id="lastModified"></span></p>
+            </section>
+        </footer>
+    </div>
+</body>
+</html>

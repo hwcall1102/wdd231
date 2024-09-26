@@ -25,7 +25,7 @@ body {
     margin: 0 auto;
     background-color: var(--accent1-color);
     font-family: 'Montserrat', helvetica, sans-serif;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
 }
 
@@ -47,6 +47,10 @@ h1 {
     grid-column: 3/4;
     margin: auto;    
 }
+.active {
+    background-color: #585894;
+    
+}
 
 nav {
     grid-row: 2/3;
@@ -55,6 +59,8 @@ nav {
     background-color: var(--paragraph-background-color);
     color: var(--paragraph-color-on-color)    
 }
+
+
 
 /* Mobile View ***************/
 #menu {
@@ -97,6 +103,7 @@ nav {
 
 .show li {
 	display: block;
+    transition: ease-in-out;
 }
 
 #menu.show::before {
