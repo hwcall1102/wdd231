@@ -19,7 +19,7 @@ hambutton.addEventListener('click', () => {
 const cards = document.querySelector('#cards');
 
 async function getMemberData() {
-    const response = await fetch("./members.json");
+    const response = await fetch(".data/members.json");
     const data = await response.json();
     // console.table(data.members);
     displayMembers(data.members);
