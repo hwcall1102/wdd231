@@ -1,0 +1,68 @@
+:root {
+    --primary-color:navy;
+    --secondary-color: #EBD5B3;
+    --accent1-color: black;
+    --accent2-color: lightgray;
+  
+    --heading-font: 'Montserrat';
+    --paragraph-font: Helvetica, sans-serif;
+  
+    --headline-color-on-white: navy; 
+    --headline-color-on-color: lightgray; 
+    --paragraph-color-on-white: black;
+    --paragraph-color-on-color: lightgray; 
+    --paragraph-background-color: #EBD5B3;
+    --nav-link-color: navy;
+    --nav-background-color: #EBD5B3;
+    --nav-hover-link-color: #EBD5B3;
+    --nav-hover-background-color: navy;
+}
+
+body {
+    font-family: var(--paragraph-font);
+    background-color: var(--secondary-color);
+}
+header, main, footer {
+    margin: 1rem;
+    position: relative;
+}
+h1 {
+    text-align: center;
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    margin: 0 auto;
+}
+#cards {
+    width: 92vw;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 10px;
+    background-color: var(--primary-color);
+}
+
+.card {
+    background-color: var(--accent2-color);
+    justify-self: center;
+    margin-bottom: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 10px;
+    padding-top: 20px;
+    text-align: center;
+    border: solid 5px;
+    border-color: var(--secondary-color);
+    border-radius: 1em;
+}
+.card h2 {
+    color: var(--headline-color-on-white);
+    padding-bottom: 8px;
+}
+.card p {
+    padding-bottom: 4px;
+}
+.card img {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
