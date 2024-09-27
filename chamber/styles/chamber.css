@@ -51,7 +51,7 @@ header {
     
 }
 .sub-title {
-    color: var(--accent2-color);
+    color: var(--accent1-color);
     grid-column: 2/3;
     grid-row: 2/3;
     margin-left: 70px;
@@ -125,7 +125,7 @@ label, #layoutSwitch {
     align-items: center;
     justify-content: right;
     margin-left: auto;
-    color: var(--accent2-color);
+    color: var(--accent1-color);
     font-size: 20pt;
     font-family: var(--heading-font);
 
@@ -198,7 +198,7 @@ footer {
     text-align: center;
 }
 footer h5 {
-    color: var(--accent2-color);
+    color: var(--accent1-color);
     margin-bottom: 0;
 }
 .footer-center {
@@ -207,11 +207,20 @@ footer h5 {
     justify-content: space-evenly;
 }
 .modified {
-    color:var(--accent2-color);
+    color:var(--accent1-color);
     margin-top: 0;
 }
 
 @media screen and (min-width: 880px) {
+
+    body {
+        margin: 0 auto;
+    }
+    header, footer {
+        width: auto;
+        max-width: 1600px;
+    }
+
     header {
         display: grid;
         grid-template-columns: 120px 1fr 1fr;
@@ -221,6 +230,7 @@ footer h5 {
         margin-top: 70px;
         margin-left: auto;
         margin-bottom: 0;
+        margin-right: 20px;
     }
    .navigation {
         display: flex;
@@ -244,11 +254,5 @@ footer h5 {
 
 @media screen and (min-width: 1300px) {
 
-    body {
-        margin: 0 auto;
-    }
-    header, footer {
-        width: auto;
-        max-width: 1600px;
-    }
+    
 }
