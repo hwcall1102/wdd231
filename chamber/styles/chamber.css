@@ -47,7 +47,7 @@ header {
 
 .active {
     text-decoration: underline;
-    text-decoration-color: var(--accent2-color);
+    text-decoration-color: var(--accent1-color);
     
 }
 .sub-title {
