@@ -1,3 +1,5 @@
+// applies to all pages
+
 const today = new Date();
 
 const year = document.querySelector("#currentyear");
@@ -15,6 +17,13 @@ hambutton.addEventListener('click', () => {
 	mainnav.classList.toggle('show');
 	hambutton.classList.toggle('show');
 });
+
+// home java weather API's and random card generator
+
+
+
+
+// directory functionality and card creation 
 
 const layoutSwitch = document.getElementById('layoutSwitch');
 const container = document.querySelector('.cards-grid');
