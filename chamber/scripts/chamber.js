@@ -191,3 +191,21 @@ const displayMembers = (members) => {
 
 getMemberData();
 
+const data = getMemberData();
+const eliteMembers = data.members.filter((member) => member.level == "Silver" || member.level == "Gold");
+const businesses = document.getElementById("best-businesses");
+
+function randomizeMembers(members) {
+    const randomArray = []
+    for (var i = 0; i < 3; i++) {
+        let randomNumber = Math.floor(Math.random() * members.length);
+        let randomMember = members[randomNumber];  
+        members.splice(randomNumber, randomNumber);
+        randomArray.push(randomMember);
+    }
+    return randomArray;
+}
+
+const randomElite = randomizeMembers(eliteMembers);
+
+displayMemberCards(randomElite, businesses);
