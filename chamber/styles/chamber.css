@@ -125,6 +125,7 @@ main {
 
 #home-grid {
     padding-top: 10px;
+    padding-bottom: 10px;
 }
 .events h4, .current-weather h4, .forecast-weather h4 {
     border-radius: 1em 1em 0em 0em;

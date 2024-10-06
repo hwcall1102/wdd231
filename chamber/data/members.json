@@ -6,7 +6,7 @@
             "phone": "(801)-999-9999",
             "url": "https://www.thekaysvilletheatre.com/",
             "image": "./images/theatre.jpg",
-            "level": "Gold"
+            "level": "3"
         },
         {
             "name": "Kaysville Creamery",
@@ -14,7 +14,7 @@
             "phone": "(801)-999-9959",
             "url": "https://www.facebook.com/thekaysvillecreamery/",
             "image": "./images/creamery.jpeg",
-            "level": "Member"
+            "level": "1"
         },
         {
             "name": "Rays Shoe Repair",
@@ -22,7 +22,7 @@
             "phone": "(801)-999-5555",
             "url": "n/a",
             "image": "./images/rays.jpeg",
-            "level": "Gold"
+            "level": "3"
         },
         {
             "name": "Kindex",
@@ -30,7 +30,7 @@
             "phone": "(801)-999-9779",
             "url": "https://app.kindex.org/",
             "image": "./images/kindex.png",
-            "level": "Silver"
+            "level": "2"
         },
         {
             "name": "Clytie Adams School of Ballet",
@@ -38,7 +38,7 @@
             "phone": "(801)-999-9899",
             "url": "https://clytieadams.com/",
             "image": "./images/clytie-adams.jpeg",
-            "level": "Member"
+            "level": "1"
         },
         {
             "name": "Orlando's Mexican Restaurant",
@@ -46,7 +46,7 @@
             "phone": "(801)-238-9999",
             "url": "https://www.orlandosonmain.com/",
             "image": "./images/orlandos.jpeg",
-            "level": "Silver"
+            "level": "1"
         },
         {
             "name": "B C Chicken",
@@ -54,7 +54,7 @@
             "phone": "(801)-999-9999",
             "url": "https://sites.google.com/view/bc-chickenutah/home",
             "image": "./images/bc-chicken.jpeg",
-            "level": "Member"
+            "level": "1"
         }
     ]
 }

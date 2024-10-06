@@ -148,14 +148,26 @@ const displayMembers = (members) => {
         const phone = document.createElement("p");
         const image = document.createElement("img")
         const website = document.createElement("a");
-        const level = document.createElement("p")
+        const membershipLevel = document.createElement("p")
         
 
         name.innerHTML = `${member.name}`;
         address.innerHTML = `${member.address}`;
         phone.innerHTML = `${member.phone}`;
         website.innerHTML = `Website`;
-        level.innerHTML = `Level: ${member.level}`;
+        
+        let level = "Member";
+        if(member.level == 1) {
+          level = "Member";
+        }
+        else if (member.level == 2) {
+          level = "Silver";
+        }
+        else if (member.level == 3) {
+          level = "Gold";
+        }
+
+        membershipLevel.innerHTML = `Level: ${level}`;
 
         website.setAttribute("href", member.url);
 
@@ -170,7 +182,7 @@ const displayMembers = (members) => {
         card.appendChild(phone);
         card.appendChild(image);
         card.appendChild(website);
-        card.appendChild(level);
+        card.appendChild(membershipLevel);
         
 
         cards.appendChild(card);
@@ -178,3 +190,4 @@ const displayMembers = (members) => {
 }
 
 getMemberData();
+
