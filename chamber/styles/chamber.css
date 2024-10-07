@@ -82,6 +82,7 @@ header {
     justify-content: center;
     align-self: last baseline;
     margin-bottom: 10px;
+    font-family: var(--heading-font);
 }
 
 .keynote-button:hover {
