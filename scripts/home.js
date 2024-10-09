@@ -17,8 +17,9 @@ hambutton.addEventListener('click', () => {
 	hambutton.classList.toggle('show');
 });
 
-// course list
+// Course Array
 
+const courseBox = document.getElementById("courses")
 const courses = [
     {
         subject: 'CSE',
@@ -99,36 +100,49 @@ const courses = [
     }
 ]
 
-createCourseCard(courses);
+const wddCourses = courses.filter((course) => course.subject == 'WDD')
+const cseCourses = courses.filter((course) => course.subject == 'CSE')
 
-const allLink = document.querySelector("#all");
-const cseLink = document.querySelector("#cse");
-const wddLink = document.querySelector("#wdd");
+document.querySelector("#all").addEventListener('click', () => {
+    courseBox.innerHTML = ''
+    displayCourses(courses)
+})
+document.querySelector("#cse").addEventListener('click', () => {
+    courseBox.innerHTML = ''
+    displayCourses(cseCourses)
+})
+document.querySelector("#wdd").addEventListener('click', () => {
+    courseBox.innerHTML = ''
+    displayCourses(wddCourses)
+})
+const modal = document.querySelector("#course-details");
 
-allLink.addEventListener("click", () => {
-    createCourseCard(courses);
-});
-
-cseLink.addEventListener("click", () => {
-    createCourseCard(courses.filter(courses => courses.subject.includes('CSE')));
-});
-
-wddLink.addEventListener("click", () => {
-    createCourseCard(courses.filter(courses => courses.subject.includes('WDD')));
-});
-
-function createCourseCard(filteredCourses) {
-    document.querySelector("#courses").innerHTML = "";
-    filteredCourses.forEach(courses => {
-        let card = document.createElement("section");
-        let name = document.createElement("a");
-        card.setAttribute("class", courses.completed); 
-        name.innerHTML = `${courses.subject} ${courses.number}`;
-        card.appendChild(name);
-
-        document.querySelector("#courses").appendChild(card);
+function displayCourseDetails(course) {
+    modal.innerHTML = '';
+    modal.innerHTML = `
+        <button id="closeModal">❌</button>
+        <h2>${course.subject} ${course.number}</h2>
+        <h3>${course.title}</h3>
+        <p><strong>Credits</strong>: ${course.credits}</p>
+        <p><strong>Certificate</strong>: ${course.certificate}</p>
+        <p>${course.description}</p>
+        <p><strong>Technologies</strong>: ${course.technology.join(', ')}</p>
+        `;
+    modal.showModal();
+    closeModal.addEventListener('click', () => {
+        modal.close();
     });
-};
+}
+
+function displayCourses(courseList) {
+    courseList.forEach(course => {
+        const card= document.createElement("section");
+        card.innerHTML = `${course.subject}${course.number}`;
+        card.setAttribute("class", course.completed)
+        card.addEventListener("click", () => {displayCourseDetails(course)});
+        courseBox.appendChild(card);
+    })
+}
 
 createCreditsCard(courses);
 
@@ -148,3 +162,5 @@ function createCreditsCard(filteredCourses) {
 
     document.querySelector("#credits").appendChild(creditsCard);
 };
+
+displayCourses(courses);
