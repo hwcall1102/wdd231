@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber of Commerce - Directory</title>
+    <meta name="author" content="Hayden Call" >
+    <meta name="description" content="A directory of registered businesses with the Kaysville City Chamber of Commerce.">
+    <meta property="og:title" content="Kaysville City Chamber of Commerce - Directory">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://hwcall1102.github.io/wdd231/images/theatre.jpg">
+    <meta property="og:url" content="https://hwcall1102.github.io/wdd231/chamber/directory.html">
+    <link rel="icon" href="images/kcc-fav.ico">
+    <link rel=preconnect href="https://fonts.googleapis.com">
+    <link rel=preconnect href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/chamber.css">
+    <script src="scripts/chamber.js" defer></script>
+        
+</head>
+<body>
+    <div id="content">
+        <header>
+            <a id="logo_link" href=".html">
+                <img class="logo" src="images/kcc-fav.ico" alt="Kaysville Chamber of Commerce" loading="lazy">
+            </a>
+            <h1 id="hero.msg">Kaysville City</h1>
+            <h5 class="sub-title">Chamber of Commerce</h5>
+            <button id="menu" hidden>,</button>
+            <nav>
+                <ul class="navigation">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li class="active"><a href="join.html">Join</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="form-wrapper">
+                <section id="form"class="join-card">
+                    <h2>Become A Member</h2>
+                    <form class="join" action="thankyou.html" method="get">
+                        <label for="firstName">First Name:
+                            <input type="text" id="firstName" name="firstName" title="First Name" autocomplete="given-name" required>
+                        </label>
+        
+                        <label for="lastName">Last Name:
+                            <input type="text" id="lastName" name="lastName" title="Last Name" autocomplete="family-name">
+                        </label>
+        
+                        <label for="organizationalTitle">Organizational Title:
+                            <input type="text" id="organizationalTitle" name="organizationalTitle" title="Orginization Title" autocomplete="organization-title" pattern="[A-z0-9\s\-]"{7,}>
+                        </label>
+                        <p>Alphanumeric symbols space and hyphen only. Minimum 7 Characters.</p>
+        
+                        <label for="email">Email Address:
+                            <input type="email" id="email" name="email" title="Email Address" required autocomplete="email" placeholder="email@youremail.com">
+                        </label>
+        
+                        <label for="mobilePhone">Mobile Phone Number:
+                            <input type="tel" id="mobilePhone" name="mobilePhone" title="Mobile Phone Number" autocomplete="phone" required>
+                        </label>
+        
+                        <label for="businessName">Business Name:
+                            <input type="text" id="businessName" name="businessName" title="Business Name" autocomplete="organization" required>
+                        </label>
+        
+                        <label for="membershipLevel">Membership Level:
+                            <select id="membershipLevel" name="membershipLevel">
+                                <option value="NP">Non Profit</option>
+                                <option value="Bronze">Bronze</option>
+                                <option value="Silver">Silver</option>
+                                <option value="Gold">Gold</option>
+                            </select>
+                        </label>
+        
+                        <label for="description">Description:
+                            <textarea id="description" title="Description" name="description"></textarea>
+                        </label>
+        
+                        <input type="hidden" id="timestamp" name="timestamp" value="">
+        
+                        <button class="join-button" type="submit">Join Now!</button>
+                    </form>
+                </section>
+                
+                <div id="member-level" class="join-card">
+                    <h2>Membership Levels</h2>
+                    <section id="non-profit" class="card learn-more">
+                        <h3>Non Profit</h3>
+                        <button class="body-button">Learn More</button>
+                    </section>
+                    <section id="bronze" class="card learn-more">
+                        <h3>Bronze</h3>
+                        <button class="body-button">Learn More</button>
+                    </section>
+                    <section id="silver" class="card learn-more">
+                        <h3>Silver</h3>
+                        <button class="body-button">Learn More</button>
+                    </section>
+                    <section id="gold" class="card learn-more">
+                        <h3>Gold</h3>
+                        <button class="body-button">Learn More</button>
+                    </section>
+                </div>
+                
+            </div>
+        </main>
+        <footer>
+            <section class="footer-left">
+                <h4>Kaysville City Chamber of Commerce</h4>
+                <p>21 North Main Street<br>Kaysville, Utah 84037<br>info@kaysvillecc.org<br>(123)456-7890</p>
+            </section>
+            <section class="footer-center">
+                <p>social link 1</p>
+                <p>social link 2</p>
+                <p>social link 3</p>
+            </section>
+            <section class="footer-right">
+                <p>WDD231 Class Project<br>Hayden Call<br>&copy; <span id="currentyear"></span> Kaysville City Chamber of Commerce</p>
+                <p class="modified"><span id="lastModified"></span></p>
+            </section>
+        </footer>
+    </div>    
+</body>
+</html>
