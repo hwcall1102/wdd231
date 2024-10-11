@@ -539,33 +539,33 @@ input:-webkit-autofill{
     font-size: 20px;
     font-family: var(--paragraph-font);
     margin: 20px;
-
-    .body-button {
-        border: solid 1px;
-        color: var(--primary-color);
-        background-color: var(--accent1-color);
-        border-radius: 1rem;
-        padding: 10px;
-        text-decoration: None;
-        text-align: center;
-        display: flex;
-        margin: 0 auto;
-        margin-top: 30px;
-        grid-column: 5/6;
-        grid-row: 1/2;
-        width: 150px;
-        height: 20px;
-        align-items: center;
-        justify-content: center;
-        align-self: last baseline;
-        margin-bottom: 10px;
-        font-family: var(--heading-font);
-        font-size: 15px;
-    }
-    .body-button:hover {
-        background-color: var(--secondary-color);
-    }
 }
+#thankyou .body-button {
+    border: solid 1px;
+    color: var(--primary-color);
+    background-color: var(--accent1-color);
+    border-radius: 1rem;
+    padding: 10px;
+    text-decoration: None;
+    text-align: center;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 30px;
+    grid-column: 5/6;
+    grid-row: 1/2;
+    width: 150px;
+    height: 20px;
+    align-items: center;
+    justify-content: center;
+    align-self: last baseline;
+    margin-bottom: 10px;
+    font-family: var(--heading-font);
+    font-size: 15px;
+}
+#thankyou .body-button:hover {
+    background-color: var(--secondary-color);
+}
+
 
 #thankyou h2 {
     border-radius: 1em 1em 0em 0em;
