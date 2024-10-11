@@ -15,7 +15,8 @@
     <link rel=preconnect href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/chamber.css">
-    <script src="scripts/chamber.js" defer></script>
+    <script src="scripts/chamber.js" type="module"></script>
+    <script src="scripts/form-results.js" defer></script>
         
 </head>
 <body>
@@ -37,7 +38,10 @@
             </nav>
         </header>
         <main>
-
+            <div id="thankyou">
+                <h2>Form Complete</h2>
+                <div id="results"></div>
+            </div>
         </main>
         <footer>
             <section class="footer-left">

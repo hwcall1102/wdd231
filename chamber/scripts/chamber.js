@@ -2,10 +2,10 @@ import modification from './modification.mjs';
 import menu from './menu.mjs';
 import weather from './weather.mjs';
 import level from './member-level.mjs';
-import results from './form-results.mjs';
 modification();
 menu();
 weather();
+
 
 
 
@@ -68,6 +68,8 @@ const displayMembers = (members) => {
         cards.appendChild(card);
     });
 }
+
 getMemberData();
 level();
-results();
+
+
