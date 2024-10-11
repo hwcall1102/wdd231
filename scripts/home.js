@@ -116,6 +116,7 @@ document.querySelector("#wdd").addEventListener('click', () => {
     displayCourses(wddCourses)
 })
 const modal = document.querySelector("#course-details");
+const closeModal = doccument.querySelector(".closeModal");
 
 function displayCourseDetails(course) {
     modal.innerHTML = '';
@@ -136,7 +137,7 @@ function displayCourseDetails(course) {
 
 function displayCourses(courseList) {
     courseList.forEach(course => {
-        const card= document.createElement("section");
+        const card = document.createElement("section");
         card.innerHTML = `${course.subject}${course.number}`;
         card.setAttribute("class", course.completed)
         card.addEventListener("click", () => {displayCourseDetails(course)});
