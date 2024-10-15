@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hayden Call Web Develepmnent | Home</title>
+    <meta name="author" content="Hayden Call" >
+    <meta name="description" content="Hayden Call Webdevelopment Website " >
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/style-large.css">
+    <script src="scripts/projects.js" defer></script>
+</head>
+<body>
+    <div id="content">
+        <header>
+            <a id="logo_link" href="index.html">
+                <img class="logo" src="images/logo.png" alt="Hayden Call Web Development" loading="lazy">
+            </a>
+            <h1 id="hero.msg">Hayden Call Web Development</h1>
+            <button id="menu" hidden>,</button>
+            <nav>
+                <ul class="navigation">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="mywork.html">Work</a></li>
+                    <li><a href="contactus.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="hero">
+                <div id="hero-box">
+                    <img id="hero-img" src="images/business.jpg" alt="small business" loading="lazy">
+                </div>     
+        </div>
+        <main>
+            <section class="my-work-msg">
+                <p>In a world where anything is possible with the right tools, it can be hard to know where to begin. Here are a few examples of my work to inspire you as to what you want to see in your site.</p>
+            </section>
+            <section class="line"></section>
+            <section class="click">
+                <p>
+                    (Click to Enlarge)
+                </p>
+            </section>
+            <div id="image-container"></div>
+            <section>
+                <!-- The expanding image container -->
+                <div class="container">
+                    <!-- Close the image -->
+                    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                
+                    <!-- Expanded image -->
+                    <img id="expandedImg" alt="enlarged image" style="width:100%">
+                
+                    <!-- Image text -->
+                    <div id="imgtext"></div>
+                </div>
+            </section>
+            <section class="button-message">
+                <div class="my-work-msg2">
+                    <p>We will work with you using your existing branding, coors and style or help you develop one from scratch to craft a one of a kind website.</p>
+                </div>
+                <a class="my-work-contact-button" href="contactus.html">Contact Us</a>
+            </section>
+        </main>
+        <footer>
+            <section class="footer-nav">
+                <p><a href="index.html">Home</a></p>
+                <p><a href="mywork.html">Work</a></p>
+                <p><a href="contactus.html">Contact</a></p>
+            </section>
+            <section class="copyright">
+                <p>&copy; <span id="currentyear"></span> Hayden Call United States of America</p>
+                <p class="modified"><span id="lastModified"></span></p>
+            </section>
+        </footer>
+    </div>
+</body>
+</html>
