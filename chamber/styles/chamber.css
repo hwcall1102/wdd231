@@ -642,7 +642,7 @@ input:-webkit-autofill{
     margin: 0 auto;
     margin-top: 20px;
 }
-#discover-caption {
+.discover-caption {
     text-align: center;
     font-size: medium;
     font-style: italic;
@@ -743,11 +743,11 @@ input:-webkit-autofill{
     }
     #discover-grid {
         display: flex;
-        height: 1005px;
+        height: 1160px;
     }
 
     #discover-info {
-        height: 100%;
+        height: 1160px;
         width: 440px;
         min-width: 440px;
         padding: 0px;
