@@ -742,7 +742,8 @@ input:-webkit-autofill{
         margin: 20px;
     }
     #discover-grid {
-        display: flex;
+        display: grid;
+        grid-template-columns: 440px, 1fr;
         height: 1160px;
     }
 
@@ -754,6 +755,7 @@ input:-webkit-autofill{
     }
     #discover-images {
         overflow-y: auto;
+        grid-column: 2/3;
     }
     .discover-image:hover {
         box-shadow: var(--primary-color) 0px 14px 28px;
