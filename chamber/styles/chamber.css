@@ -603,7 +603,7 @@ input:-webkit-autofill{
     margin-bottom: -5px;
 }
 
-#demographics, #discover-events, #discover-attractions {
+#last-visit, #demographics, #discover-events, #discover-attractions {
     background-color: var(--secondary-color);
     border: solid 5px;
     border-color: var(--secondary-color);
