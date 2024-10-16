@@ -172,9 +172,11 @@ main {
     border-radius: 1em;
     word-wrap: break-word;
     color: var(--primary-color);
-    font-size: 20px;
     font-family: var(--paragraph-font);
     margin: 20px;
+}
+.events p {
+    font-size: 20px;
 }
 .current-weather {
     background-color: var(--secondary-color);
@@ -182,9 +184,11 @@ main {
     border-color: var(--secondary-color);
     border-radius: 1em;
     color: var(--primary-color);
-    font-size: 20px;
     font-family: var(--paragraph-font);
     margin: 20px;
+}
+.weather-grid {
+    font-size: 20px;
 }
 .current-weather section, .forecast-weather section {
     padding: 5px;
@@ -200,9 +204,11 @@ main {
     border-color: var(--secondary-color);
     border-radius: 1em;
     color: var(--primary-color);
-    font-size: 20px;
     font-family: var(--paragraph-font);
     margin: 20px;
+}
+.forecast-weather section{
+    font-size: 20px;
 }
 
 footer {
@@ -580,6 +586,68 @@ input:-webkit-autofill{
     border: none;
 }
 
+/* discover page css*/
+
+#discover-info {
+    padding-top: 10px;
+}
+
+#discover-info h4 {
+    border-radius: 1em 1em 0em 0em;
+    background-color: var(--accent1-color);
+    padding: 5px;
+    padding-left: 20px;
+    margin-top: -5px;
+    margin-left: -5px;
+    margin-right: -5px;
+    margin-bottom: -5px;
+}
+
+#demographics, #discover-events, #discover-attractions {
+    background-color: var(--secondary-color);
+    border: solid 5px;
+    border-color: var(--secondary-color);
+    border-radius: 1em;
+    word-wrap: break-word;
+    color: var(--primary-color);
+    font-family: var(--paragraph-font);
+    margin: 20px;
+}
+
+.info-image {
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    padding-top: 20px;;
+}
+
+#attraction-caption {
+    text-align: center;
+    font-size: small;
+    font-style: italic;
+    padding: 5px;
+}
+
+#discover-images {
+    background-color: var(--secondary-color);
+    border-radius: 1em;
+    margin: 20px;
+    padding-bottom: 20px;
+    color: var(--primary-color);
+}
+
+.discover-image {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+#discover-caption {
+    text-align: center;
+    font-size: medium;
+    font-style: italic;
+    padding-top: 20px;
+}
 
 /* media screens to scale site*/
 
@@ -624,7 +692,7 @@ input:-webkit-autofill{
 
     #home-grid {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 355px 355px;
     }
     .events {
         grid-column: 1/3;
@@ -672,6 +740,23 @@ input:-webkit-autofill{
     #member-level section {
         width: auto;
         margin: 20px;
+    }
+    #discover-grid {
+        display: flex;
+        height: 1005px;
+    }
+
+    #discover-info {
+        height: 100%;
+        width: 440px;
+        min-width: 440px;
+        padding: 0px;
+    }
+    #discover-images {
+        overflow-y: auto;
+    }
+    .discover-image:hover {
+        box-shadow: var(--primary-color) 0px 14px 28px;
     }
     
 }

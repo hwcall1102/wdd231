@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber of Commerce - Directory</title>
+    <meta name="author" content="Hayden Call" >
+    <meta name="description" content="A directory of registered businesses with the Kaysville City Chamber of Commerce.">
+    <meta property="og:title" content="Kaysville City Chamber of Commerce - Directory">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://hwcall1102.github.io/wdd231/images/theatre.jpg">
+    <meta property="og:url" content="https://hwcall1102.github.io/wdd231/chamber/directory.html">
+    <link rel="icon" href="images/kcc-fav.ico">
+    <link rel=preconnect href="https://fonts.googleapis.com">
+    <link rel=preconnect href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/chamber.css">
+    <script src="scripts/chamber.js" type="module"></script>
+    <script src="scripts/form-results.js" defer></script>
+        
+</head>
+<body>
+    <div id="content">
+        <header>
+            <a id="logo_link" href="index.html">
+                <img class="logo" src="images/kcc-fav.ico" alt="Kaysville Chamber of Commerce" loading="lazy">
+            </a>
+            <h1 id="hero.msg">Kaysville City</h1>
+            <h5 class="sub-title">Chamber of Commerce</h5>
+            <button id="menu" hidden>,</button>
+            <nav>
+                <ul class="navigation">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                    <li class="active"><a href="discover.html">Discover</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div id="discover-grid">
+                <div id="discover-info">
+                    <section id="last-visit">
+                        <h4>Welcome</h4>
+                        
+                    </section>
+                    <section id="demographics">
+                        <h4>Demographics</h4>
+                        <p>Per 2020 census data:</p>
+                        <p>Number of Households: 8,996</p>
+                        <p>Median Household Income: $121,867</p>
+                        <p>43% of residents between 20-59</p>
+                    </section>
+                    <section id="discover-events">
+                        <h4>Events</h4>
+                        <p>October 31st - Halloween Block Party<br>Sponsored by The Kaysville Theatre</p>
+                        <p>November 17th - Thanksgiving Coats for Kids fundraiser <br>Sponsored by Kindex with support by Kaysville-Layton Rotary Club</p>
+                    </section>
+                    <section id="discover-attractions">
+                        <h4>Attractions</h4>
+                        <img class="info-image" src="images/heritage-park.jpg" alt="alt text" loading="lazy">
+                        <figcaption id="attraction-caption">The George Pilling Adams cabin in Heritage Park operated by the Daughters of the Utah Pioneers evokes the rich history of Kaysville</figcaption>
+                    </section>
+                </div>
+                <div id="discover-images">
+                    <img class="discover-image" src="images/main-street.jpg" alt="Kaysville City Main Street" loading="lazy">
+                    <figcaption id="discover-caption">Main Street</figcaption>
+                    <img class="discover-image" src="images/old-main-street.jpeg" alt="Kaysville City Main Street 1948" loading="lazy">
+                    <figcaption id="discover-caption">Main Street in 1948</figcaption>
+                    <img class="discover-image" src="images/block-party.jpeg" alt="Annual Block Party Event" loading="lazy">
+                    <figcaption id="discover-caption">Annual Block Party Event</figcaption>
+                    <img class="discover-image" src="images/christmas-event.jpeg" alt="Barnes Park pavillion in autumn" loading="lazy">
+                    <figcaption id="discover-caption">Christmas Giving Event</figcaption>
+                    <img class="discover-image" src="images/barnes-park.jpeg" alt="alt text" loading="lazy">
+                    <figcaption id="discover-caption">Barnes Park, one of Kaysvilles many great parks</figcaption>
+                    <img class="discover-image" src="images/main-parade.jpeg" alt="4th of July Parade" loading="lazy">
+                    <figcaption id="discover-caption">Kaysville 4th of July Parade</figcaption>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <section class="footer-left">
+                <h4>Kaysville City Chamber of Commerce</h4>
+                <p>21 North Main Street<br>Kaysville, Utah 84037<br>info@kaysvillecc.org<br>(123)456-7890</p>
+            </section>
+            <section class="footer-center">
+                <p>social link 1</p>
+                <p>social link 2</p>
+                <p>social link 3</p>
+            </section>
+            <section class="footer-right">
+                <p>WDD231 Class Project<br>Hayden Call<br>&copy; <span id="currentyear"></span> Kaysville City Chamber of Commerce</p>
+                <p class="modified"><span id="lastModified"></span></p>
+            </section>
+        </footer>
+    </div>    
+</body>
+</html>
