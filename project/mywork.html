@@ -3,12 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hayden Call Web Develepmnent | Home</title>
+    <title>Hayden Call Web Development</title>
     <meta name="author" content="Hayden Call" >
-    <meta name="description" content="Hayden Call Webdevelopment Website " >
+    <meta name="description" content="Hayden Call Web Development, A New Website is Only a Click Away!" >
+    <meta property="og:title" content="Hayden Call Web Development"/>
+    <meta property="og:type" content="Lets help you with your small business website, that will grow as you do."/>
+    <meta property="og:image" content="https://hwcall1102.github.io/wdd231/project/images/logo.png"/>
+    <meta property="og:url" content="https://hwcall1102.github.io/wdd231/project/index.html"/>
+    <link rel="icon" href="images/logo-fav.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/style-large.css">
-    <script src="scripts/projects.js" defer></script>
+    <script src="scripts/projects.js" type="module"></script>
 </head>
 <body>
     <div id="content">
@@ -21,7 +29,7 @@
             <nav>
                 <ul class="navigation">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="mywork.html">Work</a></li>
+                    <li class="active"><a href="mywork.html">Work</a></li>
                     <li><a href="contactus.html">Contact</a></li>
                 </ul>
             </nav>
@@ -32,35 +40,23 @@
                 </div>     
         </div>
         <main>
-            <section class="my-work-msg">
+            <div class="my-work-msg">
                 <p>In a world where anything is possible with the right tools, it can be hard to know where to begin. Here are a few examples of my work to inspire you as to what you want to see in your site.</p>
-            </section>
-            <section class="line"></section>
-            <section class="click">
+            </div>
+            <div class="line"></div>
+            <div class="click">
                 <p>
                     (Click to Enlarge)
                 </p>
-            </section>
+            </div>
             <div id="image-container"></div>
-            <section>
-                <!-- The expanding image container -->
-                <div class="container">
-                    <!-- Close the image -->
-                    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-                
-                    <!-- Expanded image -->
-                    <img id="expandedImg" alt="enlarged image" style="width:100%">
-                
-                    <!-- Image text -->
-                    <div id="imgtext"></div>
-                </div>
-            </section>
-            <section class="button-message">
+            <dialog id="enlarged-images"></dialog>                            
+            <div class="button-message">
                 <div class="my-work-msg2">
-                    <p>We will work with you using your existing branding, coors and style or help you develop one from scratch to craft a one of a kind website.</p>
+                    <p>We will work with you using your existing branding, colors and style or help you develop one from scratch to craft a one of a kind website.</p>
                 </div>
                 <a class="my-work-contact-button" href="contactus.html">Contact Us</a>
-            </section>
+            </div>
         </main>
         <footer>
             <section class="footer-nav">

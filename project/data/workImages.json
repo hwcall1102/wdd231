@@ -1,0 +1,76 @@
+{
+    "workImages": [
+        {
+            "image": "images/home-card.png",
+            "alt": "Home page example"
+        },
+        {
+            "image": "images/home-card2.png",
+            "alt": "Home page footer example"
+        },
+        {
+            "image": "images/sub-card.png",
+            "alt": "Sub page example"
+        },
+        {
+            "image": "images/sub-card2.png",
+            "alt": "Extended sub page example"
+        },
+        {
+            "image": "images/sub-card3.png",
+            "alt": "Extended sub page example"
+        },
+        {
+            "image": "images/contact-card.png",
+            "alt": "Contact page example"
+        },
+        {
+            "image": "images/home-screen.png",
+            "alt": "Home page example"
+        },
+        {
+            "image": "images/directory-1.png",
+            "alt": "Sub page example"
+        },
+        {
+            "image": "images/directory-2.png",
+            "alt": "Extended sub page example"
+        },
+        {
+            "image": "images/join-screen.png",
+            "alt": "Join page example"
+        },
+        {
+            "image": "images/discover-1.png",
+            "alt": "Sub page example"
+        },
+        {
+            "image": "images/discover-2.png",
+            "alt": "Extended sub page example"
+        },
+        {
+            "image": "images/temple-home.png",
+            "alt": "Dynamic Sorting Example"
+        },
+        {
+            "image": "images/temple-home-2.png",
+            "alt": "Dynamic Sorting Example"
+        },
+        {
+            "image": "images/temple-old.png",
+            "alt": "Dynamic Sorting Example"
+        },
+        {
+            "image": "images/temple-new.png",
+            "alt": "Dynamic Sorting Example"
+        },
+        {
+            "image": "images/temple-large.png",
+            "alt": "Dynamic Sorting Example"
+        },
+        {
+            "image": "images/temple-small.png",
+            "alt": "Dynamic Sorting Example"
+        }
+    ]
+}

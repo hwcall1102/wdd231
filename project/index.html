@@ -3,12 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hayden Call Web Develepmnent | Home</title>
+    <title>Hayden Call Web Development</title>
     <meta name="author" content="Hayden Call" >
-    <meta name="description" content="Hayden Call Webdevelopment Website " >
+    <meta name="description" content="Hayden Call Web Development, A New Website is Only a Click Away!" >
+    <meta property="og:title" content="Hayden Call Web Development"/>
+    <meta property="og:type" content="Lets help you with your small business website, that will grow as you do."/>
+    <meta property="og:image" content="https://hwcall1102.github.io/wdd231/project/images/logo.png"/>
+    <meta property="og:url" content="https://hwcall1102.github.io/wdd231/project/index.html"/>
+    <link rel="icon" href="images/logo-fav.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/style-large.css">
-    <script src="scripts/projects.js" defer></script>
+    <script src="scripts/projects.js" type="module"></script>
 </head>
 <body>
     <div id="content">
@@ -20,7 +28,7 @@
             <button id="menu" hidden>,</button>
             <nav>
                 <ul class="navigation">
-                    <li><a href="index.html">Home</a></li>
+                    <li class="active"><a href="index.html">Home</a></li>
                     <li><a href="mywork.html">Work</a></li>
                     <li><a href="contactus.html">Contact</a></li>
                 </ul>
@@ -33,8 +41,20 @@
         </div>
         <main>
             <div class="main-grid">
-                <section class="msg-img">
-                    <img src="images/web-construction.jpg" alt="Web site in progress" loading="lazy">
+                <section class="current-weather">
+                    <div class = "weather-grid">
+                        <h3>Kaysville, UT</h3>
+                        <figure>
+                            <img id="weather-icon" src="" alt="">
+                        </figure>
+                        <section><span id="current-temp"></span></section>
+                        <section><span id="description"></span></section>
+                        <section><span id="high"></span></section>
+                        <section><span id="low"></span></section>
+                        <section><span id="humidity"></span></section>
+                        <section><span id="sunrise"></span></section>
+                        <section><span id="sunset"></span></section>
+                    </div>
                 </section>
                 <section class="msg-h2">
                     <h2>A New Website is Only a Click Away!</h2>

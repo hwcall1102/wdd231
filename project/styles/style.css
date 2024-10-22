@@ -26,7 +26,6 @@
     background-color: var(--accent1-color);
     font-family: 'Montserrat', helvetica, sans-serif;
     font-size: 22px;
-    margin: 0;
     padding: 0;
 }
 
@@ -39,6 +38,7 @@ header {
     width: 120px;
     margin-left: 10px;
     margin-right: 10px;
+    border-radius: 1em;
 }
 #logo_link {
     padding-top: 5px;
@@ -102,6 +102,10 @@ header {
     color: transparent;
 }
 
+.active {
+    text-decoration: 3px underline var(--nav-hover-background-color);
+}
+
 #hero-img {
     width: 100%;
     height: 150px;
@@ -114,10 +118,31 @@ header {
 
 .main-grid {
     display: grid;
+    margin-bottom: 20px;
 }
 
-.msg-img {
-    display: none;
+.current-weather {
+    background-color: var(--primary-color);
+    border-radius: 1em;
+    color: var(--paragraph-color-on-white);
+    font-family: var(--paragraph-font);
+    margin: 20px;
+    box-shadow: 5px 5px 10px var(--secondary-color);
+}
+.current-weather h3 {
+    text-align: center;
+}
+.weather-grid {
+    font-size: 20px;
+}
+.current-weather section {
+    padding: 10px;
+    padding-left: 20px;
+}
+.current-weather figure {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .msg-h2 {
     color: #434371;
@@ -125,14 +150,14 @@ header {
     align-items: center;
 }
 .msg {
-    background-color: #dbcbd8;
+    background-color: var(--primary-color);
     padding: 25px;
     padding-bottom: 10px;
-    box-shadow: 5px 5px 10px #434371;
-    border-radius: 5px;
+    box-shadow: 5px 5px 10px var(--secondary-color);
+    border-radius: 1em;
 }
 .msg p {
-    color: #434371;
+    color: var(--paragraph-color-on-white);
     font-size: 1em;
     padding-bottom: 5px;
 }
@@ -197,10 +222,10 @@ footer p a:hover {
     margin-top: 10px;
     padding: 10px;
     border-radius: 5px;
-    border: 1px solid #434371
+    border: 1px solid var(--secondary-color);
 }
 .line {
-    border-bottom: 1px solid #434371;
+    border-bottom: 1px solid var(--secondary-color);
     margin: 30px;
     margin-top: -25px;
     margin-bottom: 25px;;
@@ -212,10 +237,11 @@ footer p a:hover {
 .button-message {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    margin-bottom: 20px;
 }
 .my-work-contact-button {
-    background-color: #434371;
-    color: #9ad4d6;
+    background-color: var(--secondary-color);
+    color: var(--accent2-color);
     text-decoration: none;
     font-size: 18px;
     padding: 15px 30px;
@@ -227,14 +253,14 @@ footer p a:hover {
     grid-row: 2/3;
 }
 .my-work-contact-button:hover {
-    background-color: #9ad4d6;
-    color: #434371;
+    background-color: var(--accent2-color);
+    color: var(--secondary-color);
 }
 .my-work-msg2 {
-    color:#434371;
+    color:var(--secondary-color);
     grid-column: 2/7;
-    background-color: #dbcbd8;
-    border: 1px solid #434371;
+    background-color: var(--primary-color);
+    border: 1px solid var(--secondary-color);
     border-radius: 5px;
     margin-top: 20px;
     padding: 10px;
@@ -244,29 +270,60 @@ footer p a:hover {
     display: block;
     margin: 10px auto;
 }
-  
-/* The expanding image container (positioning is needed to position the close button and the text) */
-.container {
-    position: relative;
-    display: none;
+
+#image-container img {
+    width: 80%;
+    padding: 5px;
 }
-/* Expanding image text */
-#imgtext {
-    position: absolute;
-    bottom: 15px;
-    left: 15px;
-    color: #f2fdff;
-    font-size: 20px;
+  
+#enlarged-images {
+    border: 2px solid var(--secondary-color);
+    border-radius: 1rem;
+    padding: 0;
+    background-color: var(--accent1-color);
+    box-shadow: 0 0 3rem var(--primary-color);
+    width: 90%;
+    max-width: 80%;
+    color: var(--paragraph-color-on-white);
+}
+#enlarged-images img {
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 5%;
+}
+#enlarged-images p {
+    text-align: center;
+}
+#enlarged-images::backdrop {
+    background-color: rgba(67,67,113,0.5);
 }
 
-/* Closable button inside the image */
-.closebtn {
+#closeModal {
     position: absolute;
-    top: 10px;
-    right: 15px;
-    color: #f2fdff;
-    font-size: 35px;
-    cursor: pointer;
+    top: 5px;
+    right: 5px;
+    padding: .5rem 1rem;
+    background-color: transparent;
+    border: none;
+}
+
+#enlarged-images {
+    transition: display 1s ease-in, overlay 1s ease-in;
+    animation: close 1s forwards;
+    &[open] {
+        animation: open 1s forwards;
+    }
+}
+
+@keyframes open {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+        display: block;
+    }
 }
 
 
@@ -276,18 +333,19 @@ footer p a:hover {
     display: none;
 }
 .contact-us-msg {
-    font-size: 22px;
+    font-size: 1em;
     grid-column: 1/3;
+    width: 90%;
     padding: 10px;
-    background-color: #dbcbd8;
-    color: #434371;
+    background-color: var(--primary-color);
+    color: var(--paragraph-color-on-white);
     border-radius: 1em;
     margin-top: 25px;
-    width: 500px;
     margin: 0 auto;
+    box-shadow: 5px 5px 10px var(--secondary-color);
 }
 form {
-    width: 500px;
+    width: 90%;
     margin-top: 25px;
     padding: 20px;
     border: 1px solid #434371;
@@ -301,48 +359,36 @@ form {
 
 fieldset {
     border: none;
+    display: block;
 }
 
 label {
     /* Uniform size & alignment */
-    display: flex;
+    display: block;
     text-align: left;
     padding: 10px;
 }
-label input {
+input {
     height: 40px;
-    width: auto;
+    width: 100%;
     display: block;
     font: 1em 'Montserrat';
-    border: 1px solid #9ad4d6;
+    border: 1px solid var(--accent2-color);
 }
 
 textarea {
     margin-top: -15px;
-    max-width: 450px;
+    width: 100%;
     font: 1em 'Montserrat';
-    border: 1px solid #9ad4d6;
-}
-#name {
-    margin-left: 110px;
-}
-#business_name {
-    margin-left: 20px;
-}
-#mail {
-    margin-left: 115px;
-}
-#url {
-    margin-left: 10px;
+    border: 1px solid var(--accent2-color);
 }
 #msg {
-    width: 600px;
-    height: 300px;
+    height: 250px;
 }
 input:focus,
 textarea:focus {
     /* Additional highlight for focused elements */
-    border-color: #434371;
+    border-color: var(--secondary-color);
 }
 input:required {
     border-left: solid 5px red;
